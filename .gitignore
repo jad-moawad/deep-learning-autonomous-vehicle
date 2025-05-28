@@ -22,7 +22,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
 # Virtual Environments
 venv/
 env/
@@ -32,20 +31,25 @@ venv.bak/
 trajectory_env/
 .conda/
 *.pyc
-
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb_checkpoints/
-
 # pyenv
 .python-version
-
-# Data
-data/
+# Data files and datasets (but not src/data/ folder)
+/data/
 drive_data/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.json
+*.h5
+*.hdf5
+*.pkl
+*.pickle
 *.zip
 *.tar.gz
-
 # Model files
 *.pth
 *.th
@@ -53,14 +57,12 @@ drive_data/
 checkpoints/
 saved_models/
 model_weights/
-
 # Logs
 logs/
 runs/
 *.log
 tensorboard/
 .tensorboard/
-
 # IDE
 .vscode/
 .idea/
@@ -70,7 +72,6 @@ tensorboard/
 .project
 .pydevproject
 .settings/
-
 # OS
 .DS_Store
 .DS_Store?
@@ -79,7 +80,6 @@ tensorboard/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
 # Videos and large media
 *.mp4
 *.avi
@@ -87,13 +87,11 @@ Thumbs.db
 *.gif
 videos/
 output_videos/
-
 # Temporary files
 *.tmp
 *.temp
 tmp/
 temp/
-
 # Coverage reports
 htmlcov/
 .tox/
@@ -107,11 +105,9 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-
 # Documentation builds
 docs/_build/
 docs/.doctrees/
-
 # Personal notes
 notes.txt
 TODO.txt
