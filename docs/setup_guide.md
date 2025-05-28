@@ -56,7 +56,7 @@ pip install torch==1.12.0 torchvision==0.13.0
 ### 4. Install Depedendicies
 
 ```
-pip install -r requirements.txt.0
+pip install -r requirements.txt
 ```
 ### 5. Download Dataset 
 

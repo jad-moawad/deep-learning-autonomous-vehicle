@@ -14,16 +14,12 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="neural-trajectory-prediction",
     version="0.1.0",
-    author="Your Name",  # Replace with your name
-    author_email="your.email@example.com",  # Replace with your email
+    author="Jad Moawad",  
+    author_email="moawad.jad@gmail.com",  
     description="Neural network architectures for autonomous vehicle trajectory planning",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/neural-trajectory-prediction",  # Replace with your repo
-    project_urls={
-        "Bug Tracker": "https://github.com/yourusername/neural-trajectory-prediction/issues",
-        "Documentation": "https://github.com/yourusername/neural-trajectory-prediction/tree/main/docs",
-    },
+    url="https://github.com/jad-moawad/neural-trajectory-prediction",  
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
