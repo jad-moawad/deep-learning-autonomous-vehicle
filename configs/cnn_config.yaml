@@ -1,0 +1,31 @@
+# Configuration for CNN Planner
+model:
+  name: cnn_planner
+  params:
+    n_waypoints: 3
+    base_channels: 32
+    dropout_rate: 0.2
+
+data:
+  dataset_path: data/drive_data
+  batch_size: 64
+  num_workers: 4
+
+optimizer:
+  type: adamw
+  lr: 1e-3
+  weight_decay: 1e-5
+
+scheduler:
+  type: cosine
+
+training:
+  epochs: 60
+  grad_clip: 1.0
+  lateral_weight: 2.5
+  longitudinal_weight: 1.5
+  early_stopping_patience: 10
+  log_dir: logs
+  checkpoint_dir: checkpoints
+
+device: cuda

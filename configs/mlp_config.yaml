@@ -1,0 +1,34 @@
+# Configuration for MLP Planner
+model:
+  name: mlp_planner
+  params:
+    n_track: 10
+    n_waypoints: 3
+    hidden_size: 512
+    dropout_rate: 0.2
+
+data:
+  dataset_path: data/drive_data
+  batch_size: 64
+  num_workers: 4
+
+optimizer:
+  type: adamw
+  lr: 5e-4
+  weight_decay: 1e-4
+
+scheduler:
+  type: plateau
+  factor: 0.5
+  patience: 5
+
+training:
+  epochs: 30
+  grad_clip: 1.0
+  lateral_weight: 2.0
+  longitudinal_weight: 1.5
+  early_stopping_patience: 5
+  log_dir: logs
+  checkpoint_dir: checkpoints
+
+device: cuda
