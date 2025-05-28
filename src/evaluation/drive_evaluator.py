@@ -5,8 +5,8 @@ import pystk
 import torch
 from tqdm import tqdm
 
-from ..data.road_transforms import EgoTrackProcessor
-from ..data.road_utils import Track
+from ..data.transforms import EgoTrackProcessor
+from ..data.utils import Track
 from .video_visualization import VideoVisualizer, save_video
 
 MAPS = [

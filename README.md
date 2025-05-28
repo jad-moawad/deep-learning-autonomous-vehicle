@@ -61,8 +61,8 @@ The CNN model demonstrated:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/autonomous-vehicle-trajectory-planning.git
-cd autonomous-vehicle-trajectory-planning
+git clone https://github.com/jad-moawad/deep-learning-autonomous-vehicle.git
+cd deep-learning-autonomous-vehicle
 
 # Create virtual environment
 python -m venv venv
